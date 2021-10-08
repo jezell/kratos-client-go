@@ -2912,6 +2912,12 @@ components:
           description: The flow type can either be `api` or `browser`.
           title: Type is the flow type.
           type: string
+        token:
+          description: |-
+             A verification token required to complete the flow. This will only be returned if
+             six digit codes are enabled.
+          title: Token is the verification token
+          type: string
         ui:
           $ref: '#/components/schemas/uiContainer'
       required:
