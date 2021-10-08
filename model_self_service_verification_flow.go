@@ -30,6 +30,8 @@ type SelfServiceVerificationFlow struct {
 	State SelfServiceVerificationFlowState `json:"state"`
 	// The flow type can either be `api` or `browser`.
 	Type string `json:"type"`
+	// Token is the verification token.
+	Token string `json:"token"`
 	Ui UiContainer `json:"ui"`
 }
 
